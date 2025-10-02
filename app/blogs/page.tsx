@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const allBlogs = [
   {
     title: "Wormhole: The Cross-Chain Highway of Web3",
@@ -41,9 +43,9 @@ export default function BlogsPage() {
           ))}
         </div>
         <div className="text-center mt-12">
-          <a href="/" className="inline-block px-6 py-3 border border-black text-black rounded-lg hover:bg-black hover:text-white transition-colors">
+          <Link href="/" className="inline-block px-6 py-3 border border-black text-black rounded-lg hover:bg-black hover:text-white transition-colors">
             ← Back to Home
-          </a>
+          </Link>
         </div>
       </div>
     </div>
