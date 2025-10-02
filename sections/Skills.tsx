@@ -1,6 +1,6 @@
 const skills = [
-  "Anchor", "Rust", "Solana", "Next.js", "React", "TypeScript", "TailwindCSS", "MongoDB",
-  "PostgreSQL", "Node.js", "Prisma", "Supabase"
+  "Anchor", "Rust", "Solana","Solana Web3.js","SPL Tokens","Metaplex", "Next.js", "React", "TypeScript", "TailwindCSS", "MongoDB",
+  "PostgreSQL", "Node.js","GraphQL", "Prisma","WebSockets", "Supabase"
 ];
 
 export default function Skills() {

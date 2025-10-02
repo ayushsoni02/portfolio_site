@@ -1,59 +1,87 @@
 const allProjects = [
   {
-    title: "ethereal",
+    title: "LegalEase",
+    date: "September 2025",
+    image: "/legalease.png",
+    status: "Completed",
+    desc: "Legal Helper – An AI-powered legal assistant platform. Simplifies legal documents, enables chat with an AI legal bot, and helps track case progress anytime, anywhere.",
+    tech: ["Next.js", "TypeScript", "TailwindCSS", "AI/LLMs"],
+    website: "https://legal-ease-zeta.vercel.app/",
+    source: "https://github.com/ayushsoni02/LegalEase",
+  },
+  {
+    title: "BlockNova",
     date: "August 2025",
-    status: "Ongoing",
-    desc: "a modern nft marketplace, with modern design supporting both devnet and mainnet nfts",
-    tech: ["Solana", "Next.js", "Typescript", "TailwindCSS"],
-    website: "#",
-    source: "#",
-  },
-  {
-    title: "swiftgo",
-    date: "July 2025", 
+    image: "/blocknova.png",
     status: "Completed",
-    desc: "a minimalistic and aesthetic landing page for a modern cab-booking service.",
-    tech: ["Next.js", "Typescript", "TailwindCSS"],
-    website: "#",
-    source: "#",
+    desc: "Blockchain SaaS Landing Page – A modern, responsive landing page with smooth animations and clean UI tailored for the blockchain industry.",
+    tech: ["Next.js", "TailwindCSS", "Framer Motion"],
+    website: "https://blockchain-saas-landing-page.vercel.app/",
+    source: "https://github.com/ayushsoni02/BlockNova",
   },
   {
-    title: "The NEXUS Platform",
+    title: "LinkNest",
+    date: "July 2025",
+    image: "/linknest.png",
+    status: "Completed",
+    desc: "A personal knowledge management app. Save and organize important links from platforms like Twitter, YouTube, and others for easy access later, simplifying content management and boosting productivity.",
+    tech: ["Next.js", "TypeScript", "MongoDB", "TailwindCSS"],
+    website: "https://linknest-v1.vercel.app/",
+    source: "https://github.com/ayushsoni02/LinkNest",
+  },
+  {
+    title: "PixelKit",
     date: "June 2025",
-    status: "Completed",
-    desc: "Decentralized identity management system secured by zero-knowledge proofs.",
-    tech: ["Rust", "Solana", "Anchor Framework"],
-    website: "#",
-    source: "#",
-  },
-  {
-    title: "EchoStream UI",
-    date: "May 2025",
-    status: "Completed",
-    desc: "Real-time audio visualization tool with a highly responsive WebGL rendering engine.",
-    tech: ["React", "Three.js", "WebGL"],
-    website: "#",
-    source: "#",
-  },
-  {
-    title: "AetherTerminal",
-    date: "April 2025",
-    status: "Completed",
-    desc: "A browser-based, customizable terminal emulator for cloud environment management.",
-    tech: ["TypeScript", "Tailwind CSS", "Docker"],
-    website: "#",
-    source: "#",
-  },
-  {
-    title: "nodara.network",
-    date: "March 2025",
+    image: "/pixelkit.png",
     status: "Ongoing",
-    desc: "A lightweight protocol for renting verifiable micro-functions from smartphones, enabling trust-minimized execution and crypto-native monetization.",
-    tech: ["Solana", "Rust", "React Native", "Anchor"],
+    desc: "A modern e-commerce platform for selling digital media assets including images, videos, e-books, and PDFs. Integrated with ImageKit for media storage, NextAuth for authentication, and Razorpay for payments.",
+    tech: ["Next.js", "TypeScript", "MongoDB", "ImageKit", "Razorpay", "NextAuth"],
     website: "#",
-    source: "#",
+    source: "https://github.com/ayushsoni02/pixelKit",
+  },
+  {
+    title: "Decentralised_Canvas",
+    date: "May 2025",
+    image: "/decentralised_canvas.png",
+    status: "Ongoing",
+    desc: "A Canva-like decentralized design tool built during ETHGlobal New Delhi. Uses Seal for encryption and Walrus for secure, decentralized storage.",
+    tech: ["Seal", "Walrus", "React", "Next.js"],
+    website: "#",
+    source: "https://github.com/ayushsoni02/D_canvas",
+  },
+  {
+    title: "CanvasFlow",
+    date: "April 2025",
+    image: "/canvasflow.png",
+    status: "Ongoing",
+    desc: "A real-time collaborative whiteboard app built from scratch. Features multi-user drawing via WebSocket, monorepo architecture with Turborepo, and a sleek, intuitive UI.",
+    tech: ["Next.js", "TypeScript", "WebSocket", "Turborepo"],
+    website: "#",
+    source: "https://github.com/ayushsoni02/Canvas_Flow",
+  },
+  {
+    title: "Sypra (Spend Your Portfolio)",
+    date: "March 2025",
+    image: "/sypra.png",
+    status: "Ongoing",
+    desc: "A Solana program that lets users pay merchants using a mix of tokens from their wallet. Supports escrow, optional swaps into merchant-preferred tokens via Jupiter, and settlement with platform fees deducted.",
+    tech: ["Rust", "Solana", "Anchor", "Jupiter"],
+    website: "#",
+    source: "https://github.com/ayushsoni02/Sypra",
+  },
+  {
+    title: "ProtocolPulse",
+    date: "February 2025",
+    image: "/protocolpulse.png",
+    status: "Ongoing",
+    desc: "Real-time DeFi protocol health analysis powered by The Graph Protocol. Enables tracking of user behavior patterns and predicting protocol health issues before they become critical.",
+    tech: ["The Graph", "React", "TypeScript", "Node.js"],
+    website: "#",
+    source: "https://github.com/ayushsoni02/ProtocolPulse",
   },
 ];
+
+
 
 export default function ProjectsPage() {
   return (
@@ -84,7 +112,11 @@ function ProjectCard({ project }: { project: typeof allProjects[0] }) {
   return (
     <div className="border border-gray-200 rounded-xl overflow-hidden bg-white shadow-sm">
       <div className="h-48 bg-gray-100 flex items-center justify-center">
-        <span className="text-gray-400">Project Preview</span>
+      <img
+                    src={project.image || "/placeholder.svg"}
+                    alt={project.title}
+                    className="w-full h-48 object-cover"
+                  />
       </div>
       <div className="p-6">
         <div className="flex items-center justify-between mb-2">

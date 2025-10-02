@@ -1,21 +1,23 @@
 const projects = [
   {
-    title: "ethereal",
-    date: "August 2025",
+    title: "LegalEase",
+    date: "September 2025",
+    image: "/legalease.png",
     status: "Ongoing",
-    desc: "a modern nft marketplace, with modern design supporting both devnet and mainnet nfts",
-    tech: ["Solana", "Next.js", "Typescript", "TailwindCSS"],
-    website: "#",
-    source: "#",
+    desc: "Legal Helper – An AI-powered legal assistant platform. Simplifies legal documents, enables chat with an AI legal bot, and helps track case progress anytime, anywhere.",
+    tech: ["Next.js", "TypeScript", "TailwindCSS", "AI/LLMs"],
+    website: "https://legal-ease-zeta.vercel.app/",
+    source: "https://github.com/ayushsoni02/LegalEase",
   },
   {
-    title: "swiftgo",
-    date: "July 2025", 
+    title: "BlockNova",
+    date: "August 2025",
+    image: "/blocknova.png",
     status: "Completed",
-    desc: "a minimalistic and aesthetic landing page for a modern cab-booking service.",
-    tech: ["Next.js", "Typescript", "TailwindCSS"],
-    website: "#",
-    source: "#",
+    desc: "Blockchain SaaS Landing Page – A modern, responsive landing page with smooth animations and clean UI tailored for the blockchain industry.",
+    tech: ["Next.js", "TailwindCSS", "Framer Motion"],
+    website: "https://blockchain-saas-landing-page.vercel.app/",
+    source: "https://github.com/ayushsoni02/BlockNova",
   },
 ];
 
@@ -24,8 +26,8 @@ export default function Projects() {
     <section id="projects" className="py-24">
       <div className="mx-auto max-w-6xl px-6">
         <div className="text-center mb-12">
-          <span className="inline-block px-3 py-1 bg-black text-white text-sm rounded-full mb-4">Proof of Work</span>
-          <h2 className="text-3xl font-bold text-black mb-4">Check out my latest work</h2>
+          <span className="inline-block px-3 py-2 border border-black text-black text-sm rounded-full font-bold">Proof of Work</span>
+          <h2 className="text-3xl font-bold text-black mb-4 py-3">Check out my latest work</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             I've worked on a variety of projects, from simple websites to complex web applications. Here are a few of my favorites.
           </p>
@@ -49,7 +51,11 @@ function ProjectCard({ project }: { project: typeof projects[0] }) {
   return (
     <div className="border border-gray-200 rounded-xl overflow-hidden bg-white shadow-sm">
       <div className="h-48 bg-gray-100 flex items-center justify-center">
-        <span className="text-gray-400">Project Preview</span>
+      <img
+                    src={project.image || "/placeholder.svg"}
+                    alt={project.title}
+                    className="w-full h-48 object-cover"
+                  />
       </div>
       <div className="p-6">
         <div className="flex items-center justify-between mb-2">

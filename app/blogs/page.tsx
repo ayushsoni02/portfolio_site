@@ -1,40 +1,28 @@
 const allBlogs = [
   {
-    title: "Understanding PDAs, Seeds and Bumps in Solana",
-    desc: "PDAs in solana can be quite confusing for a beginner. Learn everything about PDAs and gain clarity like never before.",
+    title: "Wormhole: The Cross-Chain Highway of Web3",
+    desc: "An in-depth exploration of Wormhole, how it enables cross-chain interoperability, and its role in the future of Web3 applications.",
+    tags: ["Blockchain", "Web3", "Wormhole"],
+    date: "Oct 2, 2025",
+  },
+  {
+    title: "The Blockchain Layer Cake: A Guide to L0, L1, L2, and L3",
+    desc: "A beginner-friendly explanation of the different blockchain layers, their roles, and how they interact to power Web3.",
+    tags: ["Web3", "Blockchain"],
+    date: "Sep 16, 2025",
+  },
+  {
+    title: "A Beginner’s Guide to Solana: The High-Speed Blockchain",
+    desc: "An introductory guide to Solana’s architecture, speed, and unique features — perfect for beginners stepping into the ecosystem.",
     tags: ["Solana", "Blockchain"],
-    date: "Oct 15, 2025",
+    date: "Jul 01, 2025",
   },
   {
-    title: "Learning Memory Management, Structs and Enums in Rust",
-    desc: "A deep dive into understanding and implementing memory management in Rust, essential to understand Solana Programs.",
+    title: "Solana’s Account Model Explained: How the Fastest Blockchain Organizes Data",
+    desc: "A detailed breakdown of Solana’s account model, how data is structured, and why it’s critical for program development.",
     tags: ["Rust", "Solana", "Programming"],
-    date: "Oct 01, 2025",
-  },
-  {
-    title: "Custom Transactions and Instructions in Solana",
-    desc: "Learn how to write customized transaction and instructions, essential for specific purposes!",
-    tags: ["Solana", "Smart Contracts"],
-    date: "Sep 15, 2025",
-  },
-  {
-    title: "Beyond the Hype - Why Blockchain Matters",
-    desc: "Understand why blockchain matters in today's world, more than ever!",
-    tags: ["Blockchain", "Web3", "Bitcoin"],
-    date: "Sep 01, 2025",
-  },
-  {
-    title: "Building Scalable dApps on Solana",
-    desc: "Best practices and patterns for creating decentralized applications that can handle high transaction volumes.",
-    tags: ["Solana", "dApps", "Scalability"],
-    date: "Aug 15, 2025",
-  },
-  {
-    title: "The Future of Web3 Development",
-    desc: "Exploring emerging trends and technologies that will shape the next generation of web applications.",
-    tags: ["Web3", "Future", "Technology"],
-    date: "Aug 01, 2025",
-  },
+    date: "Jun 13, 2025",
+  }
 ];
 
 export default function BlogsPage() {
